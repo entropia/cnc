@@ -1,0 +1,12 @@
+metric = yes
+
+mill-feed = 200
+mill-speed = 20000
+zsafe = 3
+zwork = 0
+offset = 0.4
+
+drill-feed = 200
+drill-speed = 20000
+zchange = 20
+zdrill = -3
