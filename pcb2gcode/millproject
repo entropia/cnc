@@ -15,10 +15,10 @@ offset = 0.4
 drill-feed = 200
 drill-speed = 20000
 zchange = 20
-zdrill = -3
+zdrill = 0
 onedrill = yes
 
-zcut = -3
+zcut = 0
 cutter-diameter = 1.6
 cut-feed = 120
 cut-speed = 20000
