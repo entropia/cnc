@@ -6,7 +6,7 @@ BOARDS=../*.brd
 
 for BRD in $BOARDS
 do
-    BASENAME=$(echo $BRD | sed 's|\.\./||;s/.brd//')
+    BASENAME=$(basename --suffix=".brd" "$BRD")
 
     # Run Eagle CAM processor
     # -X- -X+ is a workaround for a segfault in Eagle < 7.11
@@ -23,7 +23,7 @@ do
     pcb2gcode --outline pcb2gcode.outline --basename "$BASENAME"
 
     # Take out the one remaining tool change.
-    sed -i "/^T.$/,/^M0/d" ${BASENAME}_drill.ngc
+    sed -i "/^T.$/,/^M0/d" "${BASENAME}_drill.ngc"
 done
 
 # Clean up after ourselves
