@@ -5,7 +5,7 @@ metric = yes
 metricoutput = yes
 drill-front = yes
 mirror-absolute = yes
-g64 = 0
+g64 = 0.1
 
 mill-feed = 200
 mill-speed = 20000
