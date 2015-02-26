@@ -12,7 +12,7 @@ do
     # -X- -X+ is a workaround for a segfault in Eagle < 7.11
     eagle -X- -X+ -c+ -dGERBER_RS274X -opcb2gcode.front   "$BRD" Top Pads Vias
     eagle -X- -X+ -c+ -dGERBER_RS274X -opcb2gcode.back    "$BRD" Bottom Pads Vias
-    eagle -X- -X+ -c+ -dEXCELLON      -opcb2gcode.drill   "$BRD" Drills Holes
+    eagle -X- -X+ -c+ -dEXCELLON_24   -opcb2gcode.drill   "$BRD" Drills Holes
     eagle -X- -X+ -c+ -dGERBER_RS274X -opcb2gcode.outline "$BRD" Dimension
 
     # Eagle does not put the files in cwd, but next to $BRD. Well...
