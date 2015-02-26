@@ -1,4 +1,4 @@
 G92.2 ( Temporarily reset G92 settings )
 G0 Z50
-G0 X0 Y0
+G0 X0 Y3
 G92.3 ( Restore G92 settings )
