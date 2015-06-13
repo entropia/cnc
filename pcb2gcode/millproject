@@ -27,3 +27,6 @@ cut-infeed = 4
 bridges = 1
 # Für einseitige Platinen diese Zeile einkommentieren:
 # cut-front = yes
+
+# Für rubout (unnötiges Kupfer entfernen) diese Zeile unkommentieren:
+# extra-passes = 10
