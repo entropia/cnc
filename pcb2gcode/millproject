@@ -25,5 +25,8 @@ cut-feed = 120
 cut-speed = 20000
 cut-infeed = 4
 bridges = 1
-# Für einseitige Platinen diese Zeile einkommentieren:
+# Für einseitige Platinen diese Zeile unkommentieren:
 # cut-front = yes
+
+# Für rubout (unnötiges Kupfer entfernen) diese Zeile unkommentieren:
+# extra-passes = 10
