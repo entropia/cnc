@@ -36,3 +36,8 @@ The only SPI mode implemented is the following:
 If enabled, data is sent out on every change of the *value* input and also on disabled→enabled-transitions.
 
 If the component is not called frequently enough to maintain the configured clock frequency, it uses the highest frequency currently possible.
+
+
+Compiling/Installing
+--------------------
+Use *halcompile*, which is kindly provided by LinuxCNC, to compile and install the component. (See also *man 1 halcompile* and http://www.linuxcnc.org/docs/html/hal/comp.html#_compiling)
