@@ -13,7 +13,6 @@
 #include "rtapi_app.h"
 #include "hal.h"
 
-
 MODULE_AUTHOR("Florian Larysch");
 MODULE_DESCRIPTION("SPI generator for LinuxCNC HAL");
 MODULE_LICENSE("GPL");
@@ -45,7 +44,7 @@ typedef struct {
 	spigen_transfer_state state;
 
 	int remaining_transmits;
-	__u32 last_value;
+	uint32_t last_value;
 
 	int bit;
 
@@ -154,7 +153,7 @@ static void do_transfer(void *arg, long period) {
 
 	if(spigen->state == IDLE) {
 		int enabled = *(spigen->enable);
-		__u32 val = *(spigen->value);
+		uint32_t val = *(spigen->value);
 
 		if(!enabled) {
 			spigen->last_enabled = enabled;
@@ -272,4 +271,3 @@ static int export_spigen(int num, spigen_t *spigen) {
 
 	return 0;
 }
-
